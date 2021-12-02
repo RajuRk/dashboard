@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -25,10 +26,12 @@ function Sidebar() {
 
         {/* <!-- Nav Item - Dashboard --> */}
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span>
-          </a>
+          <Link to="./dashboard">
+            <a class="nav-link">
+              <i class="fas fa-fw fa-tachometer-alt"></i>
+              <span>Dashboard</span>
+            </a>
+          </Link>
         </li>
 
         {/* <!-- Divider --> */}
@@ -58,12 +61,12 @@ function Sidebar() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Custom Components:</h6>
-              <a class="collapse-item" href="buttons.html">
-                Buttons
-              </a>
-              <a class="collapse-item" href="cards.html">
-                Cards
-              </a>
+              <Link to="./buttons">
+                <a class="collapse-item">Buttons</a>
+              </Link>
+              <Link to="./card">
+                <a class="collapse-item">Cards</a>
+              </Link>
             </div>
           </div>
         </li>
@@ -89,18 +92,18 @@ function Sidebar() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Custom Utilities:</h6>
-              <a class="collapse-item" href="utilities-color.html">
-                Colors
-              </a>
-              <a class="collapse-item" href="utilities-border.html">
-                Borders
-              </a>
-              <a class="collapse-item" href="utilities-animation.html">
-                Animations
-              </a>
-              <a class="collapse-item" href="utilities-other.html">
-                Other
-              </a>
+              <Link to="./colors">
+                <a class="collapse-item">Colors</a>
+              </Link>
+              <Link to="./borders">
+                <a class="collapse-item">Borders</a>
+              </Link>
+              <Link to="./animation">
+                <a class="collapse-item">Animations</a>
+              </Link>
+              <Link to="./other">
+                <a class="collapse-item">Other</a>
+              </Link>
             </div>
           </div>
         </li>
@@ -132,9 +135,9 @@ function Sidebar() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Login Screens:</h6>
-              <a class="collapse-item" href="login.html">
-                Login
-              </a>
+              <Link to="./login">
+                <a class="collapse-item">Login</a>
+              </Link>
               <a class="collapse-item" href="register.html">
                 Register
               </a>
@@ -155,18 +158,22 @@ function Sidebar() {
 
         {/* <!-- Nav Item - Charts --> */}
         <li class="nav-item">
-          <a class="nav-link" href="charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span>
-          </a>
+          <Link to="./charts">
+            <a class="nav-link">
+              <i class="fas fa-fw fa-chart-area"></i>
+              <span>Charts</span>
+            </a>
+          </Link>
         </li>
 
         {/* <!-- Nav Item - Tables --> */}
         <li class="nav-item">
-          <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span>
-          </a>
+          <Link to="./tables">
+            <a class="nav-link">
+              <i class="fas fa-fw fa-table"></i>
+              <span>Tables</span>
+            </a>
+          </Link>
         </li>
 
         {/* <!-- Divider --> */}
@@ -178,7 +185,7 @@ function Sidebar() {
         </div>
 
         {/* <!-- Sidebar Message --> */}
-        <div class="sidebar-card d-none d-lg-flex">
+        {/* <div class="sidebar-card d-none d-lg-flex">
           <img
             class="sidebar-card-illustration mb-2"
             src="img/undraw_rocket.svg"
@@ -194,7 +201,7 @@ function Sidebar() {
           >
             Upgrade to Pro!
           </a>
-        </div>
+        </div> */}
       </ul>
     </>
   );
