@@ -26,7 +26,7 @@ function Sidebar() {
 
         {/* <!-- Nav Item - Dashboard --> */}
         <li class="nav-item active">
-          <Link to="./dashboard">
+          <Link to="/dashboard">
             <a class="nav-link">
               <i class="fas fa-fw fa-tachometer-alt"></i>
               <span>Dashboard</span>
@@ -61,10 +61,10 @@ function Sidebar() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Custom Components:</h6>
-              <Link to="./buttons">
+              <Link to="/buttons">
                 <a class="collapse-item">Buttons</a>
               </Link>
-              <Link to="./card">
+              <Link to="/card">
                 <a class="collapse-item">Cards</a>
               </Link>
             </div>
@@ -92,16 +92,16 @@ function Sidebar() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Custom Utilities:</h6>
-              <Link to="./colors">
+              <Link to="/colors">
                 <a class="collapse-item">Colors</a>
               </Link>
-              <Link to="./borders">
+              <Link to="/borders">
                 <a class="collapse-item">Borders</a>
               </Link>
-              <Link to="./animation">
+              <Link to="/animation">
                 <a class="collapse-item">Animations</a>
               </Link>
-              <Link to="./other">
+              <Link to="/other">
                 <a class="collapse-item">Other</a>
               </Link>
             </div>
@@ -135,30 +135,31 @@ function Sidebar() {
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Login Screens:</h6>
-              <Link to="./login">
+              <Link to="/login">
                 <a class="collapse-item">Login</a>
               </Link>
-              <a class="collapse-item" href="register.html">
-                Register
-              </a>
-              <a class="collapse-item" href="forgot-password.html">
-                Forgot Password
-              </a>
+              <Link to="/register">
+                <a class="collapse-item">Register</a>
+              </Link>
+              <Link to="/forgotpassword">
+                <a class="collapse-item">Forgot Password</a>
+              </Link>
+
               <div class="collapse-divider"></div>
               <h6 class="collapse-header">Other Pages:</h6>
-              <a class="collapse-item" href="404.html">
-                404 Page
-              </a>
-              <a class="collapse-item" href="blank.html">
-                Blank Page
-              </a>
+              <Link to="/error">
+                <a class="collapse-item">404 Page</a>
+              </Link>
+              <Link to="/blank">
+                <a class="collapse-item">Blank Page</a>
+              </Link>
             </div>
           </div>
         </li>
 
         {/* <!-- Nav Item - Charts --> */}
         <li class="nav-item">
-          <Link to="./charts">
+          <Link to="/charts">
             <a class="nav-link">
               <i class="fas fa-fw fa-chart-area"></i>
               <span>Charts</span>
@@ -168,7 +169,7 @@ function Sidebar() {
 
         {/* <!-- Nav Item - Tables --> */}
         <li class="nav-item">
-          <Link to="./tables">
+          <Link to="/tables">
             <a class="nav-link">
               <i class="fas fa-fw fa-table"></i>
               <span>Tables</span>
